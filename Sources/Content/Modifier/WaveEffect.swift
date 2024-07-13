@@ -11,7 +11,6 @@ struct WaveEffect<Style: ShapeStyle>: ViewModifier {
     private var progress: CGFloat
     @State private var internalProgress: CGFloat
     @State private var controlPoints: [AnimatableWaveConfiguration]
-    private let initialTime: Date
     private let numberOfWaves: Int
     private let animationDuration: TimeInterval
     private let waveFlexibility: Double
@@ -30,7 +29,6 @@ struct WaveEffect<Style: ShapeStyle>: ViewModifier {
         self.animationDuration = animationDuration
         self.waveFlexibility = waveFlexibility
         self.fill = fill
-        self.initialTime = Date.now
         self._internalProgress = State(initialValue: min(max(progress, 0.0), 1.0))
         self._controlPoints = State(initialValue: Array(repeating: AnimatableWaveConfiguration(controlPoint1: .zero, controlPoint2: .zero, progress: progress), count: wavesCount))
     }
