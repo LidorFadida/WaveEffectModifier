@@ -4,12 +4,6 @@ WaveEffectModifier is a SwiftUI library that provides a customizable wave effect
 
 ![wave-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/8f9ecbe4-d38e-46fa-b2e6-8dab4f087b65)
 
-## Features
-
-- **Customizable Waves**: Define the number of waves, their animation duration, and flexibility.
-- **Animatable Control Points**: Animate the control points of the wave shape to create fluid wave movements.
-- **Flexible Fill Styles**: Use any SwiftUI `ShapeStyle` to fill the wave shapes, allowing for custom colors and gradients.
-
 ## Installation
 
 ### Swift Package Manager
